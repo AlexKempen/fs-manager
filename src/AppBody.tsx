@@ -2,7 +2,6 @@ import React from "react";
 import { NonIdealState } from "@blueprintjs/core";
 
 import { AppTree } from "./Tree/AppTree";
-import { Field } from "./Field/Field";
 
 import { useAppSelector } from "./Store/hooks";
 import { selectActiveRoutine } from "./Tree/uiSlice";
@@ -25,7 +24,6 @@ export function AppBody(_props: AppBodyProps): JSX.Element {
             onContextMenu={(e: React.MouseEvent) => { e.preventDefault(); }}
         >
             <AppTree />
-            <Field />
         </div>
         );
 }
