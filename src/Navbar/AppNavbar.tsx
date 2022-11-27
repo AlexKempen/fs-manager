@@ -10,22 +10,17 @@ import {
     NavbarHeading,
 } from "@blueprintjs/core";
 
-import { RoutineMenu } from "./RoutineMenu";
-
 export function AppNavbar(): JSX.Element {
     return (
         <Navbar className="App-navbar">
             <NavbarGroup align={Alignment.LEFT}>
-                <NavbarHeading>Raider Robotics Web Dashboard</NavbarHeading>
+                <NavbarHeading>Onshape Configurator</NavbarHeading>
                 <NavbarDivider />
-
-                <RoutineMenu />
-
-                {/* <RobotMenu names={props.robotNames}/> */}
-
-                {/* <Button className={Classes.MINIMAL} icon="playbook" text="Routine" /> */}
+                <Button className={Classes.MINIMAL} icon="home" text="Create link" />
                 <NavbarDivider />
-                <Button className={Classes.MINIMAL} icon="home" text="Home" />
+                <Button className={Classes.MINIMAL} icon="home" text="Use link" />
+                <NavbarDivider />
+                <Button className={Classes.MINIMAL} icon="home" text="Add FeatureScript" />
             </NavbarGroup>
         </Navbar>
     );

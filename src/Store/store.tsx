@@ -9,13 +9,7 @@ import { renamedRoutine, routinesSlice } from "../Navbar/routinesSlice";
 import { pathsSlice } from "../Tree/pathsSlice";
 import { renamedWaypoint, waypointMagnitudeMoved, waypointMoved, waypointsSlice } from "../Tree/waypointsSlice";
 import {
-    allItemsDeselected,
-    splineMouseEnter,
-    splineMouseLeave,
-    splineSelected,
     tempUiSlice,
-    treeItemsCollapsed,
-    treeItemsExpanded
 } from "../Tree/tempUiSlice";
 
 const stateReducer = combineReducers({
